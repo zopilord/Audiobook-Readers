@@ -31,8 +31,8 @@ Current packaged downloads are intended for the GitHub Releases page:
 - Audiobook Workflow — Linux / Windows
 - Desktop Audiobook Reader — Linux / Windows
 - LARK Web Reader — Linux / Windows
-
-Android and Kindle setup documentation is included, but their release packages are not part of this upload yet.
+- AudiobookSync Reader — Android APK
+- LARK Sync — Kindle ZIP
 
 ## 1. Create a synchronized book
 
@@ -94,20 +94,18 @@ Books, progress, and Audiobookshelf links are shared through the host's `.lark-d
 
 ### Android Reader
 
-If an APK is supplied, install it directly. If the release is a source package, open it in Android Studio or run:
+Download `audiobooksync-reader-android.apk` from the GitHub Releases page and install it on the phone. Allow installation from that source if Android asks.
 
-```bash
-./gradlew assembleDebug
-```
-
-Install `app/build/outputs/apk/debug/app-debug.apk`, then import the synchronized book folder and choose the audio source.
+Import the synchronized book folder, then choose a matching local M4B or Audiobookshelf as the audio source.
 
 ### LARK Sync — Kindle
 
 Requires a compatible jailbroken/native-enabled Kindle with Bluetooth audio.
 
+Download `lark-sync-kindle.zip` from the GitHub Releases page, extract it, then:
+
 1. Copy `LARK-Sync/` to the Kindle root so it becomes `/mnt/us/LARK-Sync/`.
-2. Copy the supplied Scriptlet `.sh` files to `/mnt/us/documents/`.
+2. Copy the supplied Scriptlet `.sh` files from `documents/` to `/mnt/us/documents/`.
 3. Put synchronized book folders under `/mnt/us/SyncBooks/`.
 4. Optional local M4B files can go under `/mnt/us/Audiobooks/`.
 5. Launch **LARK Sync Reader**.
@@ -129,7 +127,7 @@ Host browser:   http://localhost:4173/abs
 Other devices:  http://HOST_TAILSCALE_IP:4173/abs
 ```
 
-For Kindle over the supplied Tailscale setup, create `/mnt/us/LARK-Sync/audiobookshelf.conf`:
+For Kindle over the supplied Tailscale setup, edit `/mnt/us/LARK-Sync/audiobookshelf.conf`:
 
 ```ini
 enabled=true
@@ -138,7 +136,7 @@ token=YOUR_API_KEY
 proxy=http://127.0.0.1:1055
 ```
 
-Run **Tailscale First Setup** once, then use **Tailscale Start** and **Audiobookshelf Connection Test**. Never publish your real configuration or API token.
+Never publish your real configuration or API token.
 
 ## Tested environments
 

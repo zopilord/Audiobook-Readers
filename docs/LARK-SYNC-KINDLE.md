@@ -119,12 +119,6 @@ LARK uses an E-Ink-friendly current-line indicator rather than repainting every 
 
 `chapter_number` controls visible chapter numbers. Prologues, Parts, Interludes, and Epilogues remain unnumbered while the first real chapter displays as Chapter 1.
 
-## Audiobookshelf progress
-
-Since v5.12.7 progress is event-based. It is uploaded on pause, book change, sleep-timer completion, and LARK shutdown. It is not sent every 15 seconds, and ±30-second seeks do not create extra progress writes.
-
-The old `sync_interval_seconds=15` setting is not required.
-
 ## Update safely
 
 Before updating, back up:

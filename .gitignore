@@ -1,0 +1,21 @@
+# Runtime/user state
+*.log
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+.lark-data/
+
+# Private/local configuration
+.env
+.env.*
+audiobookshelf.conf
+audiobook_reader_state.json
+overlay_geometry.json
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

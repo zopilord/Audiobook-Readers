@@ -18,6 +18,12 @@
 | [Android Reader](docs/ANDROID-READER.md) | Android | Native mobile synchronized reader with background playback |
 | [LARK Sync](docs/LARK-SYNC-KINDLE.md) | Kindle | E-Ink audiobook player and synchronized reader |
 
+## Kindle Demo
+
+See LARK Sync running on a Kindle:
+
+[Watch the Kindle demo on YouTube](https://youtube.com/shorts/bub_jgZaj-8?feature=share)
+
 ## Downloads
 
 Grab the latest builds from the **GitHub Releases** page:
@@ -161,9 +167,3 @@ Never publish your real configuration or API token.
 ### Desktop Audiobook Reader
 
 ![Desktop Audiobook Reader](assets/desktop-reader.png)
-
-## Kindle Demo
-
-See LARK Sync running on a Kindle:
-
-[Watch the Kindle demo on YouTube](https://youtube.com/shorts/bub_jgZaj-8?feature=share)

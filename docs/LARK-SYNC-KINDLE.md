@@ -117,8 +117,6 @@ Open the matching audio, link/select the synchronized folder when asked, choose 
 
 LARK uses an E-Ink-friendly current-line indicator rather than repainting every word. The 100 ms synchronization timer exists only while Sync Read is open and stops immediately when the reader closes.
 
-`chapter_number` controls visible chapter numbers. Prologues, Parts, Interludes, and Epilogues remain unnumbered while the first real chapter displays as Chapter 1.
-
 ## Update safely
 
 Before updating, back up:

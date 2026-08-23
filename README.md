@@ -8,29 +8,6 @@
 
 </div>
 
-![LARK Web Reader](assets/web-reader.png)
-
-## One workflow, multiple readers
-
-Create a portable synchronized book once with **Audiobook Sync Workflow**, then open the same `book.json + words.tsv` book on the reader you prefer.
-
-<p align="center">
-  <img src="assets/workflow.png" alt="Audiobook Sync Workflow" width="48%">
-  <img src="assets/desktop-reader.png" alt="Desktop Reader" width="48%">
-</p>
-
-<p align="center"><sub>Audiobook Sync Workflow → Desktop Reader</sub></p>
-
-## Kindle demo
-
-<p align="center">
-  <img src="assets/kindle-demo.gif" alt="LARK Sync running on Kindle" width="360">
-</p>
-
-<p align="center">
-  <a href="assets/kindle-demo.mp4">Watch the full Kindle demo (MP4)</a>
-</p>
-
 ## Included apps
 
 | App | Platform | Purpose |
@@ -171,42 +148,22 @@ Never publish your real configuration or API token.
 
 ---
 
-
-
 ## Screenshots
-
-
 
 ### LARK Web Reader
 
-
-
 ![LARK Web Reader](assets/web-reader.png)
-
-
 
 ### Audiobook Sync Workflow
 
-
-
 ![Audiobook Sync Workflow](assets/workflow.png)
-
-
 
 ### Desktop Audiobook Reader
 
-
-
 ![Desktop Audiobook Reader](assets/desktop-reader.png)
-
-
 
 ## Kindle Demo
 
-
-
 See LARK Sync running on a Kindle:
-
-
 
 [Watch the Kindle demo on YouTube](https://youtube.com/shorts/bub_jgZaj-8?feature=share)

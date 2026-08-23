@@ -1,8 +1,21 @@
 # LARK Sync for Kindle
 
+Current Kindle release: **LARK Sync v5.12.8**.
+
 Tested on a jailbroken Kindle Paperwhite 4 running firmware 5.18.1.1.1.
 
 LARK Sync plays local M4B files or streams from Audiobookshelf. **SYNC READ** is optional and uses the same `book.json + words.tsv` folder as every other reader.
+
+## v5.12.8 — streaming sync recovery
+
+Long Audiobookshelf streaming sessions could previously drift out of sync after a slow HTTP Range download. Audio could briefly crackle or pause while the fallback playback clock kept advancing, leaving the synchronized text roughly a line ahead until LARK restarted.
+
+v5.12.8 fixes this in two ways:
+
+- The decoded PCM reserve is now bounded at 2 MiB, roughly 11–12 seconds at common audiobook sample rates, so normal Range downloads do not reach the speaker.
+- If a longer network stall really empties the reserve, the playback clock holds instead of advancing through silence, then automatically re-anchors when PCM output resumes.
+
+The existing first-audio anchor and 100 ms Sync Read update loop are preserved.
 
 ## Requirements
 
@@ -108,7 +121,7 @@ LARK uses an E-Ink-friendly current-line indicator rather than repainting every 
 
 ## Audiobookshelf progress
 
-In v5.12.7 progress is event-based. It is uploaded on pause, book change, sleep-timer completion, and LARK shutdown. It is not sent every 15 seconds, and ±30-second seeks do not create extra progress writes.
+Since v5.12.7 progress is event-based. It is uploaded on pause, book change, sleep-timer completion, and LARK shutdown. It is not sent every 15 seconds, and ±30-second seeks do not create extra progress writes.
 
 The old `sync_interval_seconds=15` setting is not required.
 

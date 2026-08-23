@@ -22,7 +22,7 @@
 
 See LARK Sync running on a Kindle:
 
-[Watch the Kindle demo on YouTube](https://youtube.com/shorts/bub_jgZaj-8?feature=share)
+[Watch the Kindle demo on YouTube](https://youtube.com/shorts/GDQIV4B2-cc?feature=share)
 
 ## Downloads
 

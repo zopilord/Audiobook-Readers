@@ -1,38 +1,57 @@
+<div align="center">
+
 # Audiobooks Readers
 
-> This project was developed with AI-assisted coding.
+**Create synchronized audiobook text once, then read and listen across Linux, Windows, Web, Android, and Kindle.**
 
-Create synchronized audiobook text once, then use it on Linux, Windows, a web browser, Android, or Kindle.
+`Synchronized text` · `Local M4B` · `Audiobookshelf` · `Cross-device reading`
 
-The shared book format is:
+</div>
 
-```text
-Book Name/
-├── book.json
-└── words.tsv
-```
+![LARK Web Reader](assets/web-reader.png)
 
-Audio can come from a matching local M4B or from Audiobookshelf. The EPUB and audiobook must be the same edition or the word timing may not match.
+## One workflow, multiple readers
+
+Create a portable synchronized book once with **Audiobook Sync Workflow**, then open the same `book.json + words.tsv` book on the reader you prefer.
+
+<p align="center">
+  <img src="assets/workflow.png" alt="Audiobook Sync Workflow" width="48%">
+  <img src="assets/desktop-reader.png" alt="Desktop Reader" width="48%">
+</p>
+
+<p align="center"><sub>Audiobook Sync Workflow → Desktop Reader</sub></p>
+
+## Kindle demo
+
+<p align="center">
+  <img src="assets/kindle-demo.gif" alt="LARK Sync running on Kindle" width="360">
+</p>
+
+<p align="center">
+  <a href="assets/kindle-demo.mp4">Watch the full Kindle demo (MP4)</a>
+</p>
 
 ## Included apps
 
-| App | Purpose |
-| --- | --- |
-| [Audiobook Workflow](docs/AUDIOBOOK-WORKFLOW.md) | Creates `book.json` and `words.tsv` from an EPUB and matching M4B |
-| [Desktop Reader](docs/DESKTOP-READER.md) | Native synchronized reader for Linux and Windows |
-| [LARK Web Reader](docs/WEB-READER.md) | Browser reader with one shared library for phones and computers |
-| [Android Reader](docs/ANDROID-READER.md) | Native Android synchronized reader |
-| [LARK Sync](docs/LARK-SYNC-KINDLE.md) | Kindle audiobook player and E-Ink synchronized reader |
+| App | Platform | Purpose |
+| --- | --- | --- |
+| [Audiobook Workflow](docs/AUDIOBOOK-WORKFLOW.md) | Linux / Windows | Build synchronized `book.json + words.tsv` books from an EPUB and matching M4B |
+| [Desktop Reader](docs/DESKTOP-READER.md) | Linux / Windows | Native synchronized reading, local/ABS audio, themes, fullscreen and pop-out text |
+| [LARK Web Reader](docs/WEB-READER.md) | Web | Shared browser library for computers and phones |
+| [Android Reader](docs/ANDROID-READER.md) | Android | Native mobile synchronized reader with background playback |
+| [LARK Sync](docs/LARK-SYNC-KINDLE.md) | Kindle | E-Ink audiobook player and synchronized reader |
 
 ## Downloads
 
-Current packaged downloads are intended for the GitHub Releases page:
+Grab the latest builds from the **GitHub Releases** page:
 
 - Audiobook Workflow — Linux / Windows
 - Desktop Audiobook Reader — Linux / Windows
 - LARK Web Reader — Linux / Windows
 - AudiobookSync Reader — Android APK
 - LARK Sync — Kindle ZIP
+
+---
 
 ## 1. Create a synchronized book
 

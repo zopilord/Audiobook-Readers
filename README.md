@@ -168,3 +168,45 @@ Never publish your real configuration or API token.
 
 - Each package contains its own detailed README.
 - LARK Sync is based on LARKPlayer and retains its GPL-3.0-or-later requirements; see each package for its applicable license.
+
+---
+
+
+
+## Screenshots
+
+
+
+### LARK Web Reader
+
+
+
+![LARK Web Reader](assets/web-reader.png)
+
+
+
+### Audiobook Sync Workflow
+
+
+
+![Audiobook Sync Workflow](assets/workflow.png)
+
+
+
+### Desktop Audiobook Reader
+
+
+
+![Desktop Audiobook Reader](assets/desktop-reader.png)
+
+
+
+## Kindle Demo
+
+
+
+See LARK Sync running on a Kindle:
+
+
+
+[Watch the Kindle demo on YouTube](https://youtube.com/shorts/bub_jgZaj-8?feature=share)

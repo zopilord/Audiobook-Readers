@@ -8,6 +8,8 @@
 
 </div>
 
+> **AI disclosure:** This project was created with assistance from AI tools. It is maintained and tested by its author, and users should review the code and documentation before relying on it.
+
 ## Included apps
 
 | App | Platform | Purpose |
